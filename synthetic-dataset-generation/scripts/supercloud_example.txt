@@ -1,0 +1,14 @@
+./scripts/supercloud.sh --datasets=Covertype,Adult --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Adult --generators=ctgan,tablegan --actions=gen --test 
+./scripts/supercloud.sh --datasets=Covertype --generators=ctgan,tablegan --actions=gen --test 
+./scripts/supercloud.sh --datasets=Adult,Covertype --generators=tablegan --actions=gen --test 
+./scripts/supercloud.sh --datasets=Covertype --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Covertype --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Creditcard,Fire,Hazards --generators=ctgan,tablegan --actions=gen --test 
+./scripts/supercloud.sh --datasets=Creditcard,Fire,Hazards --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Creditcard,Hazards --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Fire --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./run.sh --datasets=Hazards --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./run.sh --datasets=Creditcard --generators=uniformgan_003 --actions=gen --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Creditcard,Hazards --generators=uniformgan_003 --actions=stats,privacy --additionals=use_dp:True --test --postfix=_dp
+./scripts/supercloud.sh --datasets=Creditcard,Fire,Hazards --generators=ctgan,tablegan --actions=stats,privacy --test 
